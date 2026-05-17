@@ -21,16 +21,16 @@ import urllib.error
 # === MODELLI ===
 MODELS = {
     "sonnet": {
-        "base_url": "https://api.anthropic.com",
-        "api_key": os.getenv("ANTHROPIC_API_KEY", ""),
-        "model": "claude-sonnet-4-6-20251101",
-        "format": "anthropic",
+        "base_url": "https://openrouter.ai/api",
+        "api_key": os.getenv("OPENROUTER_API_KEY", ""),
+        "model": "anthropic/claude-sonnet-4-5",
+        "format": "openai",
     },
     "opus": {
-        "base_url": "https://api.anthropic.com",
-        "api_key": os.getenv("ANTHROPIC_API_KEY", ""),
-        "model": "claude-opus-4-5-20251101",
-        "format": "anthropic",
+        "base_url": "https://openrouter.ai/api",
+        "api_key": os.getenv("OPENROUTER_API_KEY", ""),
+        "model": "anthropic/claude-opus-4-5",
+        "format": "openai",
     },
     "qwen-runpod": {
         "base_url": os.getenv("RUNPOD_OLLAMA_URL", "https://altmr0kkq06hml-11434.proxy.runpod.net"),
