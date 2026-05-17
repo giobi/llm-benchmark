@@ -50,6 +50,30 @@ MODELS = {
         "model": os.getenv("LITELLM_MODEL", "claude-sonnet-4-6"),
         "format": "openai",
     },
+    "qwen3": {
+        "base_url": "https://openrouter.ai/api",
+        "api_key": os.getenv("OPENROUTER_API_KEY", ""),
+        "model": "qwen/qwen3-14b",
+        "format": "openai",
+    },
+    "deepseek-v3": {
+        "base_url": "https://openrouter.ai/api",
+        "api_key": os.getenv("OPENROUTER_API_KEY", ""),
+        "model": "deepseek/deepseek-chat",
+        "format": "openai",
+    },
+    "gemini-flash": {
+        "base_url": "https://openrouter.ai/api",
+        "api_key": os.getenv("OPENROUTER_API_KEY", ""),
+        "model": "google/gemini-2.0-flash-001",
+        "format": "openai",
+    },
+    "mistral-small": {
+        "base_url": "https://openrouter.ai/api",
+        "api_key": os.getenv("OPENROUTER_API_KEY", ""),
+        "model": "mistralai/mistral-small-3.2-24b-instruct",
+        "format": "openai",
+    },
 }
 
 # === TOOL DEFINITIONS (subset brain tools) ===
