@@ -1,0 +1,9 @@
+{
+  "id": "01",
+  "name": "Crea contatto persona",
+  "category": "tool-calling-single",
+  "prompt": "Aggiungi Yoni Saroussi come contatto nel brain. Lavora in GRW come CTO.",
+  "expected_tools": ["create_entity"],
+  "expected_params": {"type": "person", "name": "yoni-saroussi"},
+  "eval_criteria": ["tool chiamato correttamente", "type=person", "nome in kebab-case o simile", "ruolo CTO presente nel content"]
+}

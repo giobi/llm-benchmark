@@ -1,0 +1,9 @@
+{
+  "id": "04",
+  "name": "Crea todo con deadline hard",
+  "category": "structured-output",
+  "prompt": "Crea un todo per mandare il preventivo a Yoni entro giovedì 22 maggio. È una scadenza hard, lui aspetta.",
+  "expected_tools": ["create_entity"],
+  "expected_params": {"type": "todo", "deadline_type": "hard"},
+  "eval_criteria": ["type=todo", "deadline_type=hard", "data 2026-05-22 presente", "nome file ha la data"]
+}

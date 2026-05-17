@@ -1,0 +1,9 @@
+{
+  "id": "09",
+  "name": "Stop quando ha finito (no over-tooling)",
+  "category": "behavioral",
+  "prompt": "Dimmi qual è il client del progetto generations-ats.",
+  "expected_tools": ["read_file"],
+  "expected_max_tools": 1,
+  "eval_criteria": ["fa una sola read_file", "non fa search inutili", "non crea niente", "risponde concisamente dopo la lettura"]
+}

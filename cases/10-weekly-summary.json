@@ -1,0 +1,9 @@
+{
+  "id": "10",
+  "name": "Sintesi settimanale multi-read",
+  "category": "multi-read-synthesis",
+  "prompt": "Cosa ho fatto questa settimana su emibrain? Guarda le diary entries recenti.",
+  "expected_tools": ["search_brain", "read_file"],
+  "expected_sequence": ["search per trovare i file", "read di 2-3 file", "sintesi finale"],
+  "eval_criteria": ["usa search prima", "legge più file", "sintetizza senza inventare", "timeline coerente"]
+}

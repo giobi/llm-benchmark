@@ -1,0 +1,9 @@
+{
+  "id": "06",
+  "name": "Leggi e riassumi senza inventare",
+  "category": "read-then-reason",
+  "prompt": "Qual è lo stato attuale dell'infrastruttura emibrain?",
+  "expected_tools": ["read_file"],
+  "expected_params": {"path": "wiki/projects/emibrain/index.md"},
+  "eval_criteria": ["legge il file prima di rispondere", "non inventa dati", "cita info dal file letto", "non hallucina IP o nomi"]
+}

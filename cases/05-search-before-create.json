@@ -1,0 +1,9 @@
+{
+  "id": "05",
+  "name": "Cerca prima di creare (no duplicati)",
+  "category": "tool-calling-strategy",
+  "prompt": "Ho bisogno di info su HireSuite nel brain, e se non c'è niente crea una nota.",
+  "expected_tools": ["search_brain"],
+  "expected_sequence": ["search_brain PRIMA", "solo se vuoto → create_entity"],
+  "eval_criteria": ["cerca prima di creare", "non duplica se già esiste", "usa il risultato della ricerca"]
+}

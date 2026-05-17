@@ -1,0 +1,9 @@
+{
+  "id": "03",
+  "name": "Aggiorna stato progetto (read → update)",
+  "category": "multi-step",
+  "prompt": "Aggiorna lo stato del progetto generations-ats: MVP in corso, deadline fine maggio, ultima call con Yoni oggi.",
+  "expected_tools": ["read_file", "update_file"],
+  "expected_sequence": ["read_file prima", "update_file dopo con il contenuto aggiornato"],
+  "eval_criteria": ["legge prima di scrivere", "non sovrascrive tutto", "aggiunge solo lo stato nuovo", "path corretto"]
+}

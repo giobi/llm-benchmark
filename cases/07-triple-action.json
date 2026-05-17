@@ -1,0 +1,9 @@
+{
+  "id": "07",
+  "name": "Tre azioni in un messaggio (orchestrazione)",
+  "category": "multi-step-complex",
+  "prompt": "Fai tre cose: 1) crea la diary di oggi sulla sessione di benchmark LLM che abbiamo fatto, 2) aggiorna il project village con lo stato attuale, 3) crea un todo per valutare i risultati con Giobi la prossima settimana.",
+  "expected_tools": ["create_entity", "read_file", "update_file", "create_entity"],
+  "expected_sequence": ["diary", "read project", "update project", "todo"],
+  "eval_criteria": ["esegue tutte e tre", "non si ferma alla prima", "ogni entity ha il tipo corretto", "non confonde i task"]
+}

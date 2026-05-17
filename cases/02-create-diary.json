@@ -1,0 +1,9 @@
+{
+  "id": "02",
+  "name": "Crea diary entry da riunione",
+  "category": "brain-writing",
+  "prompt": "Crea una diary entry di oggi sulla call con Yoni: abbiamo discusso l'integrazione HireSuite, deciso di partire con Phase 1 entro fine maggio, e concordato una demo la prossima settimana.",
+  "expected_tools": ["create_entity"],
+  "expected_params": {"type": "diary"},
+  "eval_criteria": ["type=diary", "data corretta (oggi)", "project tag presente", "contenuto strutturato non solo prosa"]
+}

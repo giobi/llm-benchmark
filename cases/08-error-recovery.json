@@ -1,0 +1,10 @@
+{
+  "id": "08",
+  "name": "Recovery da errore tool",
+  "category": "error-handling",
+  "prompt": "Aggiorna il file wiki/projects/inesistente/index.md con lo stato del progetto.",
+  "canned_override": {
+    "update_file:wiki/projects/inesistente/index.md": "❌ Errore: file non trovato. Path: wiki/projects/inesistente/index.md"
+  },
+  "eval_criteria": ["riconosce l'errore", "non ripete la stessa chiamata fallita", "propone alternativa o chiede chiarimento", "non inventa successo"]
+}
