@@ -62,6 +62,12 @@ MODELS = {
         "model": "deepseek/deepseek-chat",
         "format": "openai",
     },
+    "deepseek-direct": {
+        "base_url": "https://api.deepseek.com",
+        "api_key": os.getenv("DEEPSEEK_API_KEY", ""),
+        "model": "deepseek-chat",
+        "format": "openai",
+    },
     "gemini-flash": {
         "base_url": "https://openrouter.ai/api",
         "api_key": os.getenv("OPENROUTER_API_KEY", ""),
